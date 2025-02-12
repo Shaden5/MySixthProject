@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #menu-toggle:checked ~ #sidebar {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <nav class="flex items-center justify-between bg-gray-100 p-4 shadow">
+        <div class="flex items-center space-x-4">
+            <label for="menu-toggle" class="text-gray-700 text-2xl cursor-pointer">☰</label>
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" class="h-6" alt="YouTube Logo">
+            </a>
+        </div>
+        <div class="flex items-center bg-gray-200 p-2 rounded-full w-1/3">
+            <input type="text" class="bg-transparent text-gray-700 w-full px-2 outline-none" placeholder="Search">
+            <button class="ml-2 text-gray-500">🔍</button>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="text-gray-700 text-lg">➕</button>
+            <button class="relative">
+                🔔<span class="absolute top-0 right-0 bg-red-500 text-xs px-1 rounded-full">9+</span>
+            </button>
+            <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center text-gray-700">SH</div>
+        </div>
+    </nav>
+    
+    <div class="flex">
+        <aside id="sidebar" class="w-64 bg-gray-100 h-screen p-4 fixed transform -translate-x-full md:translate-x-0 transition-transform shadow-md">
+            <ul class="space-y-4">
+                <li class="p-2 hover:bg-gray-200 rounded"><a href="index.html">   🏠 Home</li></a>
+                <li class="p-2 hover:bg-gray-200 rounded">📜 Subscriptions</li>
+                <li class="p-2 hover:bg-gray-200 rounded">⏳ History</li>
+                <li class="p-2 hover:bg-gray-200 rounded">⚙️ Settings</li>
+            </ul>
+        </aside>
+        
+        <main class="p-4 flex flex-col md:flex-row flex-grow ml-0 md:ml-64">
+            <div class="md:w-3/4">
+                <iframe class="w-full h-96 rounded shadow" src="HTML - Introduction - W3Schools.com.mp4" frameborder="0" allowfullscreen></iframe>
+                
+                <div class="flex space-x-4 mt-4">
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded flex items-center space-x-2">🔄 <span>Share</span></button>
+                    <button class="bg-red-500 text-white px-4 py-2 rounded flex items-center space-x-2">📌 <span>Subscription</span></button>
+                    <button class="bg-gray-500 text-white px-4 py-2 rounded flex items-center space-x-2">💬 <span>Comment</span></button>
+                </div>
+                
+                <div class="mt-6 bg-gray-100 p-4 rounded shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-gray-700">SH</div>
+                        <input type="text" class="w-full p-2 bg-gray-200 rounded outline-none text-gray-700" placeholder="Add Comment">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-1/4 p-4">
+                <h2 class="text-lg font-bold mb-4">Recommended Videos</h2>
+                <a href="index2.html?video=video1" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/it1rTvBcfRg?si=UnbeNJCGE1yEOWuV" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">HTML Intro </h2>
+                </a>
+                <a href="index2.html?video=video2" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/3JluqTojuME" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">Web Develop</h2>
+                </a>
+                <a href="index2.html?video=video3" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/W6NZfCO5SIk" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">JavaScript </h2>
+                </a>
+                <a href="index2.html?video=video2" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/v8jDnBYc0bs?si=08NfzfR7UjkwgguR" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg"> CSS</h2>
+                </a>
+                <a href="index2.html?video=video3" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/bJzb-RuUcMU?si=tO_05b2DBZSVpRbI" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">Program</h2>
+                </a>
+                <a href="index2.html?video=video2" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/I2PlgSGT2Ls?si=h5FDTbAgr4HSqBCk" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">Live Html</h2>
+                </a>
+                <a href="index2.html?video=video3" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/kqtD5dpn9C8?si=DO_awLjyZb9k83g9" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">Python</h2>
+                </a>
+                <a href="index2.html?video=video2" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/n3VxTaozyPg?si=L-CEZL0QUE26chHI" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2  font-bold text-sm md:text-lg">GitHub</h2>
+                </a>
+                <a href="index2.html?video=video3" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/UUjNEMXZA-k?si=I_x7gALt-qHCdzeT" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">Media Queries</h2>
+                </a>
+                <a href="index2.html?video=video2" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/AGDDdsiZ0Ko?si=RWG5QYOyDT_N-dT" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg"> CSS</h2>
+                </a>
+                <a href="index2.html?video=video3" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/9FNNkzPBFcE?si=EP6WQJvGc3f1nooo" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">Flex Box</h2>
+                </a>
+                <a href="index2.html?video=video2" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/SNgxsIUJeDk?si=RlUDhhwvdKGO3sS7" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">LogIn Form</h2>
+                </a>
+                <a href="index2.html?video=video3" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/cLOT0APQzDs?si=SGItLP0vkXKus_uO" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">Responsive</h2>
+                </a>
+                <a href="index2.html?video=video2" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/W-LDhPyv478?si=PmEuAyCovLkKbCu5" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">Tailwind CSS</h2>
+                </a>
+                <a href="index2.html?video=video3" class="bg-gray-100 text-gray-900 p-1 rounded shadow">
+                    <iframe class="w-full h-40 rounded" src="https://www.youtube.com/embed/W6NZfCO5SIk" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="mt-2 font-bold text-sm md:text-lg">دورة JavaScript المتقدمة</h2>
+                </a>
+        </main>
+    </div>
+</body>
+</html>
